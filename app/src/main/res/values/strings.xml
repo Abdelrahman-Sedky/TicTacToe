@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+
+    <!-- Welcome -->
+    <string name="more_text">M<font color="#1664B9">o</font>re is c<font color="#1664B9">o</font>ming S<font color="#1664B9">OO</font>N</string>
+    <string name="start">Start</string>
+
+    <!-- GameStart -->
+    <string name="name">Players Name</string>
+    <string name="playerX">X - Player</string>
+    <string name="playerO">O - Player</string>
+    <string name="done">D<font color="#1664B9">o</font>ne</string>
+
+    <!-- Game -->
+    <string name="score">Sc<font color="#1664B9">o</font>re</string>
+    <string name="reset">Reset</string>
+    <string name="clear_board">Clear B<font color="#1664B9">o</font>ard</string>
+
+    <string name="draw">Draw !!</string>
+    <string name="winner">Last WIN !! 🎆</string>
+
+
+</resources>

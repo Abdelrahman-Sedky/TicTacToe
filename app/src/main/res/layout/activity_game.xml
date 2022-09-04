@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Game">
+
+    <Button
+        android:id="@+id/button_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/luckiest_guy_regular"
+        android:gravity="center"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toTopOf="@id/barrier3_view"
+        app:layout_constraintEnd_toStartOf="@id/barrier1_view"
+        app:layout_constraintStart_toStartOf="@id/barrier3_view"
+        app:layout_constraintTop_toTopOf="@id/barrier1_view"
+        tools:text="X"
+        tools:textColor="@color/venetian_ed" />
+
+    <!-- Game Board -->
+
+    <!-- First Row -->
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/luckiest_guy_regular"
+        android:textAlignment="center"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toTopOf="@id/barrier3_view"
+        app:layout_constraintEnd_toStartOf="@id/barrier2_view"
+        app:layout_constraintStart_toEndOf="@id/barrier1_view"
+        app:layout_constraintTop_toTopOf="@id/barrier1_view"
+        tools:text="O"
+        tools:textColor="@color/green_blue" />
+
+    <Button
+        android:id="@+id/button_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/luckiest_guy_regular"
+        android:textAlignment="center"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toTopOf="@id/barrier3_view"
+        app:layout_constraintEnd_toEndOf="@id/barrier3_view"
+        app:layout_constraintStart_toEndOf="@id/barrier2_view"
+        app:layout_constraintTop_toTopOf="@id/barrier2_view"
+        tools:text="X"
+        tools:textColor="@color/venetian_ed" />
+
+    <Button
+        android:id="@+id/button_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/luckiest_guy_regular"
+        android:textAlignment="center"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toTopOf="@id/barrier4_view"
+        app:layout_constraintEnd_toStartOf="@id/barrier1_view"
+        app:layout_constraintStart_toStartOf="@id/barrier3_view"
+        app:layout_constraintTop_toBottomOf="@id/barrier3_view"
+        tools:text="O"
+        tools:textColor="@color/green_blue" />
+
+    <Button
+        android:id="@+id/button_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/luckiest_guy_regular"
+        android:textAlignment="center"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toTopOf="@id/barrier4_view"
+        app:layout_constraintEnd_toStartOf="@id/barrier2_view"
+        app:layout_constraintStart_toEndOf="@id/barrier1_view"
+        app:layout_constraintTop_toBottomOf="@id/barrier3_view"
+        tools:text="X"
+        tools:textColor="@color/venetian_ed" />
+
+    <!-- Second Row -->
+    <Button
+        android:id="@+id/button_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/luckiest_guy_regular"
+        android:textAlignment="center"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toTopOf="@id/barrier4_view"
+        app:layout_constraintEnd_toEndOf="@id/barrier3_view"
+        app:layout_constraintStart_toEndOf="@id/barrier2_view"
+        app:layout_constraintTop_toBottomOf="@id/barrier3_view"
+        tools:text="O"
+        tools:textColor="@color/green_blue" />
+
+    <Button
+        android:id="@+id/button_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/luckiest_guy_regular"
+        android:textAlignment="center"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toBottomOf="@id/barrier1_view"
+        app:layout_constraintEnd_toStartOf="@id/barrier1_view"
+        app:layout_constraintStart_toStartOf="@id/barrier4_view"
+        app:layout_constraintTop_toBottomOf="@id/barrier4_view"
+        tools:text="X"
+        tools:textColor="@color/venetian_ed" />
+
+    <Button
+        android:id="@+id/button_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/luckiest_guy_regular"
+        android:textAlignment="center"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toBottomOf="@id/barrier1_view"
+        app:layout_constraintEnd_toStartOf="@id/barrier2_view"
+        app:layout_constraintStart_toEndOf="@id/barrier1_view"
+        app:layout_constraintTop_toBottomOf="@id/barrier4_view"
+        tools:text="O"
+        tools:textColor="@color/green_blue" />
+
+    <Button
+        android:id="@+id/button_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/luckiest_guy_regular"
+        android:textAlignment="center"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toBottomOf="@id/barrier2_view"
+        app:layout_constraintEnd_toEndOf="@id/barrier4_view"
+        app:layout_constraintStart_toEndOf="@id/barrier2_view"
+        app:layout_constraintTop_toBottomOf="@id/barrier4_view"
+        tools:text="X"
+        tools:textColor="@color/venetian_ed" />
+
+    <Button
+        android:id="@+id/reset_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26sp"
+        android:fontFamily="@font/luckiest_guy_regular"
+        android:padding="10dp"
+        android:text="@string/reset"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/clear_board_btn"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/clear_board_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26sp"
+        android:fontFamily="@font/luckiest_guy_regular"
+        android:padding="10dp"
+        android:text="@string/clear_board"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/reset_btn" />
+
+    <TextView
+        android:id="@+id/winner_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/luckiest_guy_regular"
+        android:padding="10dp"
+        android:textColor="@color/venetian_ed"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottom_horizontal_barrier_view"
+        tools:text="Winner !!" />
+
+    <!-- Third Row -->
+    <TextView
+        android:id="@+id/game_x_player_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:fontFamily="@font/luckiest_guy_regular"
+        android:text="@string/playerX"
+        android:textColor="@color/venetian_ed"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_barrier_view"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/score_tv" />
+
+    <TextView
+        android:id="@+id/score_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="8dp"
+        android:fontFamily="@font/luckiest_guy_regular"
+        android:text="@string/score"
+        android:textColor="@color/charcoal"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/game_o_player_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:fontFamily="@font/luckiest_guy_regular"
+        android:text="@string/playerO"
+        android:textColor="@color/green_blue"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/vertical_barrier_view"
+        app:layout_constraintTop_toBottomOf="@id/score_tv" />
+
+    <!-- Reset Button -->
+
+    <TextView
+        android:id="@+id/game_x_player_score_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:fontFamily="@font/luckiest_guy_regular"
+        android:textColor="@color/venetian_ed"
+        android:textSize="46sp"
+        app:layout_constraintEnd_toEndOf="@+id/game_x_player_tv"
+        app:layout_constraintStart_toStartOf="@id/game_x_player_tv"
+        app:layout_constraintTop_toBottomOf="@id/game_x_player_tv"
+        tools:text="0" />
+    <!-- Score Board -->
+    <TextView
+        android:id="@+id/game_o_player_score_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:fontFamily="@font/luckiest_guy_regular"
+        android:textColor="@color/green_blue"
+        android:textSize="46sp"
+        app:layout_constraintEnd_toEndOf="@id/game_o_player_tv"
+        app:layout_constraintStart_toStartOf="@id/game_o_player_tv"
+        app:layout_constraintTop_toBottomOf="@id/game_o_player_tv"
+        tools:text="0" />
+
+
+    <View
+        android:id="@+id/barrier1_view"
+        android:layout_width="5dp"
+        android:layout_height="0dp"
+        android:background="@color/charcoal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@id/reset_btn"
+        app:layout_constraintEnd_toStartOf="@+id/barrier2_view"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/winner_tv" />
+
+    <View
+        android:id="@+id/barrier2_view"
+        android:layout_width="5dp"
+        android:layout_height="0dp"
+        android:background="@color/charcoal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@id/reset_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/barrier1_view"
+        app:layout_constraintTop_toBottomOf="@id/winner_tv" />
+
+    <View
+        android:id="@+id/barrier3_view"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_marginHorizontal="25dp"
+        android:background="@color/charcoal"
+        app:layout_constraintBottom_toTopOf="@+id/barrier4_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_horizontal_barrier_view" />
+
+
+    <View
+        android:id="@+id/barrier4_view"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_marginHorizontal="25dp"
+        android:background="@color/charcoal"
+        app:layout_constraintBottom_toTopOf="@id/reset_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barrier3_view" />
+
+    <View
+        android:id="@+id/top_horizontal_barrier_view"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:background="@color/charcoal"
+        app:layout_constraintBottom_toTopOf="@id/vertical_barrier_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/vertical_barrier_view"
+        android:layout_width="5dp"
+        android:layout_height="0dp"
+        android:background="@color/charcoal"
+        app:layout_constraintBottom_toBottomOf="@id/game_x_player_score_tv"
+        app:layout_constraintEnd_toStartOf="@+id/game_o_player_tv"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/game_x_player_tv"
+        app:layout_constraintTop_toTopOf="@id/game_x_player_tv" />
+
+    <View
+        android:id="@+id/bottom_horizontal_barrier_view"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:background="@color/charcoal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vertical_barrier_view" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
